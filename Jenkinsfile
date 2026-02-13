@@ -8,8 +8,10 @@ pipeline {
     }
 
     stage('Build') {
+      agent any
       steps {
         echo 'Building Hello World Project'
+        echo 'Hello world'
       }
     }
 
